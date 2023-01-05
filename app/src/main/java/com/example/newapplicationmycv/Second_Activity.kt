@@ -12,22 +12,29 @@ class Second_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //BUTTON ON START
         binding.btnEsper.isSelected=true
 
         binding.btnEsper.setOnClickListener {
+            //CHANGE FRAGMENT
             replaceFragment(EspFragment())
+            //CHANGE BUTTON ON
             binding.btnEsper.isSelected = true
             binding.btnIstruz.isSelected = false
             binding.btnLingue.isSelected = false
         }
         binding.btnIstruz.setOnClickListener {
+            //CHANGE FRAGMENT
             replaceFragment(IstrFragment())
+            //CHANGE BUTTON ON
             binding.btnEsper.isSelected = false
             binding.btnIstruz.isSelected = true
             binding.btnLingue.isSelected = false
         }
         binding.btnLingue.setOnClickListener {
+            //CHANGE FRAGMENT
             replaceFragment(LingFragment())
+            //CHANGE BUTTON ON
             binding.btnEsper.isSelected = false
             binding.btnIstruz.isSelected = false
             binding.btnLingue.isSelected = true
