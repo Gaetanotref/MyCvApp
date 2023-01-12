@@ -1,28 +1,28 @@
 <resources>
-    <string name="app_name">NewApplicationMyCV</string>
+    <string name="app_name">CvAppPortfolio</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <!-- Title -->
-    <string name="title1">Prima esperienza</string>
-    <string name="title2">Seconda esperienza</string>
-    <string name="title3">Terza esperienza</string>
-    <string name="title4">Quarta esperienza</string>
-    <string name="title5">Quinta esperienza</string>
-    <string name="title6">Sesta esperienza</string>
-    <string name="title7">Settima esperienza</string>
-    <string name="title8">Ottava esperienza</string>
+    <string name="title1">First Experience</string>
+    <string name="title2">Second Experience</string>
+    <string name="title3">Thirst Experience</string>
+    <string name="title4">Fourth Experience</string>
+    <string name="title5">Fifth Experience</string>
+    <string name="title6">Sixth Experience</string>
+    <string name="title7">Seventh Experience</string>
+    <string name="title8">Eighth Experience</string>
 
     <!--SubTitle -->
-    <string name="subTitle1">La mia prima esperienza è stata bla bla bla</string>
-    <string name="subTitle2">La mia seconda esperienza è stata bla bla bla</string>
-    <string name="subTitle3">La mia terza esperienza è stata bla bla bla</string>
-    <string name="subTitle4">La mia quarta esperienza è stata bla bla bla</string>
-    <string name="subTitle5">La mia quinta esperienza è stata bla bla bla</string>
-    <string name="subTitle6">La mia sesta esperienza è stata bla bla bla</string>
-    <string name="subTitle7">La mia settima esperienza è stata bla bla bla</string>
-    <string name="subTitle8">La mia ottava esperienza è stata bla bla bla</string>
+    <string name="subTitle1">My first experience was in Italy … for … i did …</string>
+    <string name="subTitle2">My second experience was in Italy … for … i did …</string>
+    <string name="subTitle3">My third experience was in Italy … for … i did …</string>
+    <string name="subTitle4">My fourth experience was in Italy … for … i did …</string>
+    <string name="subTitle5">My fifth experience was in Italy … for … i did …</string>
+    <string name="subTitle6">My sixth experience was in Italy … for … i did …</string>
+    <string name="subTitle7">My seventh experience was in Italy … for … i did …</string>
+    <string name="subTitle8">My eighth experience was in Italy … for … i did …</string>
 
 
     <!-- Data -->

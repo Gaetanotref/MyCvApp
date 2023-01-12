@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/grey"
-            android:text="LA MIA ISTRUZIONE"
+            android:text="MY EDUCATION"
             android:textSize="30sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/grey"
             android:paddingStart="5dp"
-            android:text="Diploma Nautico"
+            android:text="Nautical high school Diploma"
             android:layout_marginTop="20dp"
             android:textSize="25sp"
             android:textStyle="bold"/>
@@ -35,8 +35,8 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Istituto Tecnico Nautico
-            VOTO:68"
+            android:text="I.T. Nautical Luigi Rizzo
+            VOTE:68"
             android:textColor="@color/grey"
             android:textSize="20sp"
             android:textStyle="italic"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="5dp"
             android:textColor="@color/grey"
-            android:text="Certificati e corsi"
+            android:text="Certificates and courses"
             android:layout_marginTop="20dp"
             android:textSize="25sp"
             android:textStyle="bold"/>
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cambridge English Preliminary(PET)
-            Certificazione inglese livello B1"
+            B1 level English certificate"
             android:textSize="20sp"
             android:textColor="@color/grey"
             android:textStyle="italic"
@@ -76,8 +76,8 @@
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Attestato di formazione per gli operatori del settore
-alimentare         (HACCP) 2020/2023"
+            android:text="Training certificate for sector operators
+food         (HACCP) 2020/2023"
             android:textColor="@color/grey"
             android:textSize="20sp"
             android:textStyle="italic"

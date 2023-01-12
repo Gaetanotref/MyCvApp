@@ -1,46 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/bg_gradient2"
     android:orientation="vertical"
     tools:context=".Second_Activity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
+    <ImageView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Explore my CV!"
-        android:textSize="40sp"
-        android:textStyle="bold" />
+        android:layout_height="270dp"
+        android:src="@drawable/img_choose"
+        android:gravity="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/layout_social"
+        android:layout_below="@id/textView"
+        android:orientation="horizontal">
+
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_git"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/github_mark"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="GITHUB"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_linkedin"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/linkedin_icon"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="LINKEDIN"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_fragment"
+        android:layout_below="@id/layout_social"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragments"
+            android:name="com.example.newapplicationmycv.EspFragment"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="355dp"
+            tools:layout="@layout/fragment_esperienze" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/layout_fragment"
         android:orientation="horizontal">
 
         <android.widget.Button
             android:id="@+id/btnEsper"
-            android:layout_width="60dp"
-            android:layout_height="100dp"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="@drawable/btn_border_selector"
             android:drawableTop="@drawable/ic_baseline_work_24"
             android:fontFamily="sans-serif-black"
-            android:gravity="bottom|center"
-            android:paddingBottom="10dp"
+            android:gravity="center"
             android:text="Experience"
             android:textColor="@color/bg_color"
             android:textSize="19sp"
@@ -48,15 +108,14 @@
 
         <android.widget.Button
             android:id="@+id/btnIstruz"
-            android:layout_width="60dp"
-            android:layout_height="100dp"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="@drawable/btn_border_selector"
             android:drawableTop="@drawable/ic_baseline_school_24"
             android:fontFamily="sans-serif-black"
-            android:gravity="bottom|center"
-            android:paddingBottom="10dp"
+            android:gravity="center"
             android:text="Education"
             android:textColor="@color/bg_color"
             android:textSize="19sp"
@@ -64,81 +123,18 @@
 
         <android.widget.Button
             android:id="@+id/btnLingue"
-            android:layout_width="60dp"
-            android:layout_height="100dp"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/btn_border_selector"
             android:drawableTop="@drawable/ic_baseline_travel_explore_24"
             android:fontFamily="sans-serif-black"
-            android:gravity="bottom|center"
-            android:paddingBottom="10dp"
+            android:gravity="center"
             android:text="Languages"
             android:textColor="@color/bg_color"
             android:textSize="19sp"
             android:textStyle="bold" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragments"
-            android:name="com.example.newapplicationmycv.EspFragment"
-            android:layout_width="match_parent"
-            android:layout_height="496dp"
-            android:layout_marginTop="190dp"
-            tools:layout="@layout/fragment_esperienze" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_height="1dp"
-            android:background="@color/black" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
-
-
-            <android.widget.Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                android:textColor="@color/text_color"
-                android:layout_weight="1"
-                android:background="@drawable/btn_rounded_social"
-                android:drawableEnd="@drawable/github_mark"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"
-                android:gravity="center"
-                android:text="GitHub"
-                android:textSize="30sp"
-                android:fontFamily="@font/lato_bold"
-                android:textStyle="bold"
-                tools:ignore="RtlSymmetry" />
-
-            <android.widget.Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"
-                android:gravity="center"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/btn_rounded_social"
-                android:drawableEnd="@drawable/linkedin_icon"
-                android:textSize="30sp"
-                android:layout_weight="1"
-                android:text="Linkedin"
-                android:textStyle="bold"
-                android:fontFamily="@font/lato_bold"
-                tools:ignore="RtlSymmetry" />
-        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>
